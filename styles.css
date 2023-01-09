@@ -1,0 +1,186 @@
+:root {
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F2EAE2;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+h2 {
+  font-family: 'Fraunces', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  color: #1C232B;
+}
+
+.card {
+  width: 60rem;
+  height: 45rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  background-color: white;
+  border-radius: 1rem;
+
+  overflow: hidden;
+
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__content {
+  padding: 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__category {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #6C7289;
+  letter-spacing: 0.5rem;
+
+}
+
+.card__title {
+  margin-top: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.card__description {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+
+  color: #6C7289;
+}
+
+.card__price {
+  display: flex;
+
+  align-items: center;
+  gap: 2rem;
+
+  margin-top: 3rem;
+}
+
+.card__price--current {
+  color: #3D8168;
+}
+
+.card__price--original {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  text-decoration-line: line-through;
+
+  color: #6C7289;
+}
+
+.button {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 4.8rem;
+
+  color: #FFFFFF;
+
+  background: #3D8168;
+  border-radius: 0.8rem;
+}
+
+.button__prepend {
+  width: 1.4rem;
+  height: 1.5rem;
+}
+
+.button:hover {
+  background: #1A4032;
+}
+
+@media(max-width: 600px) {
+
+  main {
+    height: auto;
+
+    display: flex;
+  }
+
+  .card {
+    width: 100%;
+    min-width: 290px;
+    height: 100%;
+    display: block;
+
+    background-color: white;
+    border-radius: 1rem;
+
+    overflow: hidden;
+    margin: 2.8rem 1.6rem;
+  }
+
+  .card__content {
+    padding: 2.4rem;
+    display: block;
+  }
+
+  .card__image {
+    width: 100%;
+    height: 24rem;
+    object-fit: cover;
+  }
+
+  .card__title {
+    margin-top: 1.2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .card__middle {
+    margin-top: 2rem;
+    margin-bottom: 2.4rem;
+  }
+
+}
