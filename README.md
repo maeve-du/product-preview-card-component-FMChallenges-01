@@ -29,15 +29,16 @@ Users should be able to:
 ### Screenshot
 
 Mobile
-![Image description-w400](assets/16732832218315.png)
+<img src="https://github.com/maeve-du/product-preview-card-component-FMChallenges-01/raw/master/assets/16732832218315.png" width="400px">
+
 
 Desktop
-![Image description-w800](assets/16732826088603.png)
+<img src="https://github.com/maeve-du/product-preview-card-component-FMChallenges-01/raw/master/assets/16732826088603.png" width="800">
 
 ### Links
 
-- Solution URL:  
-- Live Site URL: 
+- Solution URL: [GitHub](https://github.com/maeve-du/product-preview-card-component-FMChallenges-01)
+- Live Site URL:  [GitHub Pages](https://maeve-du.github.io/product-preview-card-component-FMChallenges-01/)
 
 ## My process
 
@@ -50,7 +51,35 @@ Desktop
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+1. Learned how to set different picture resources for different device's screen sizes
+
+    ```HTML
+    <picture>
+      <source srcset="./images/image-product-mobile.jpg"
+              media="(max-width: 600px)">
+      <img src="./images/image-product-desktop.jpg" alt="product-image" class="card__image">
+    </picture>
+    ```
+
+2. Learned more about grid and flexbox
+
+3. Use grid system to put elements in the center of a container
+    ```CSS
+    html,
+    body {
+      width: 100vw;
+      height: 100vh;
+      background-color: #F2EAE2;
+    }
+    
+    main {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+    }
+    ```
+    
 
 ## Author
 
