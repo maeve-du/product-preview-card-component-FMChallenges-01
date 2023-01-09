@@ -51,7 +51,7 @@ Desktop
 
 ### What I learned
 
-1. Learned how to set different picture resources for different device's screen sizes
+1. Learned how to set different picture resources for different device screen sizes
 
     ```HTML
     <picture>
@@ -83,5 +83,5 @@ Desktop
 
 ## Author
 
-- Website - [@maeve-du](https://github.com/maeve-du)
+- GitHub - [@maeve-du](https://github.com/maeve-du)
 - Frontend Mentor - [@maeve-du](https://www.frontendmentor.io/profile/maeve-du)
