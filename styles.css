@@ -1,7 +1,3 @@
-:root {
-  font-size: 10px;
-}
-
 *,
 *::before,
 *::after {
@@ -26,23 +22,23 @@ main {
   place-items: center;
 }
 
-h2 {
+.card__title {
   font-family: 'Fraunces', serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 3.2rem;
-  line-height: 3.2rem;
+  font-size: 2rem;
+  line-height: 2rem;
   color: #1C232B;
 }
 
 .card {
-  width: 60rem;
-  height: 45rem;
+  width: 37.5rem;
+  height: 28.125rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
   background-color: white;
-  border-radius: 1rem;
+  border-radius: .625rem;
 
   overflow: hidden;
 
@@ -55,7 +51,7 @@ h2 {
 }
 
 .card__content {
-  padding: 3.2rem;
+  padding: 2rem;
 
   display: flex;
   flex-direction: column;
@@ -65,23 +61,23 @@ h2 {
 .card__category {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: .75rem;
   color: #6C7289;
-  letter-spacing: 0.5rem;
-
+  letter-spacing: .3125rem;
+  text-transform: uppercase;
 }
 
 .card__title {
-  margin-top: 2rem;
-  margin-bottom: 2.4rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .card__description {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.4rem;
-  line-height: 2.3rem;
+  font-size: .875rem;
+  line-height: 1.4375rem;
 
   color: #6C7289;
 }
@@ -90,12 +86,16 @@ h2 {
   display: flex;
 
   align-items: center;
-  gap: 2rem;
+  gap: 1.25rem;
 
-  margin-top: 3rem;
+  /* margin-top: 1.875rem; */
 }
 
 .card__price--current {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
   color: #3D8168;
 }
 
@@ -103,8 +103,8 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.3rem;
-  line-height: 2.3rem;
+  font-size: .8125rem;
+  line-height: 1.4375rem;
   text-decoration-line: line-through;
 
   color: #6C7289;
@@ -114,27 +114,29 @@ h2 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 1.4rem;
-  line-height: 1.7rem;
+  font-size: .875rem;
+  line-height: 1.0625rem;
 
   display: flex;
   flex-direction: row;
-  gap: 1.2rem;
+  gap: .75rem;
   align-items: center;
   justify-content: center;
 
   width: 100%;
-  height: 4.8rem;
+  height: 3rem;
 
   color: #FFFFFF;
 
   background: #3D8168;
-  border-radius: 0.8rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
 }
 
 .button__prepend {
-  width: 1.4rem;
-  height: 1.5rem;
+  width: .875rem;
+  height: .9375rem;
 }
 
 .button:hover {
@@ -151,36 +153,36 @@ h2 {
 
   .card {
     width: 100%;
-    min-width: 290px;
+    min-width: 18.125rem;
     height: 100%;
     display: block;
 
     background-color: white;
-    border-radius: 1rem;
+    border-radius: .625rem;
 
     overflow: hidden;
-    margin: 2.8rem 1.6rem;
+    margin: 1.75rem 1rem;
   }
 
   .card__content {
-    padding: 2.4rem;
+    padding: 1.5rem;
     display: block;
   }
 
   .card__image {
     width: 100%;
-    height: 24rem;
+    height: 15rem;
     object-fit: cover;
   }
 
   .card__title {
-    margin-top: 1.2rem;
-    margin-bottom: 1.6rem;
+    margin-top: .75rem;
+    margin-bottom: 1rem;
   }
 
   .card__price {
-    margin-top: 2rem;
-    margin-bottom: 2.4rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.5rem;
   }
 
 }
